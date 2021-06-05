@@ -1,4 +1,4 @@
-const {User, Thought} = require('../models');
+const {User} = require('../models');
 
 const userController = {
     createUser({body}, res) {
@@ -58,6 +58,7 @@ const userController = {
             res.status(500).json(err);
         });
     }
+    //add and remove friends under here
 }
 
 module.exports = userController;
